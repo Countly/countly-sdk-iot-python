@@ -29,7 +29,7 @@ class Countly:
         if start_thrad==1:
             threading.Timer(periodSecond, self.init).start()
         metrics = {
-              "_os": system_info.platform(),
+              "_os": "Linux",
               "_os_version": system_info.os_version(),
               "_device": "Raspberry Pi 2",
               "_app_version": "0.0.1",
