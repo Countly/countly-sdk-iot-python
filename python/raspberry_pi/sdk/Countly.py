@@ -4,7 +4,7 @@ import threading
 import time
 import urllib
 
-import system_info
+from system_info import system_info
 
 urlStr=""
 appKey=""
@@ -29,11 +29,11 @@ class Countly:
         if start_thrad==1:
             threading.Timer(periodSecond, self.init).start()
         metrics = {
-              "_os": system_info.system_info.platform(),
-              "_os_version": system_info.system_info.os_version(),
+              "_os": system_info.platform(),
+              "_os_version": system_info.os_version(),
               "_device": "Raspberry Pi 2",
               "_app_version": "0.0.1",
-              "_locale": system_info.system_info.locale()
+              "_locale": system_info.locale()
             }
 
         reqmetrics= urllib.quote(json.dumps(metrics))
