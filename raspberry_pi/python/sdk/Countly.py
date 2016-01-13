@@ -20,26 +20,23 @@ uuid_file = "uuid.txt"
 
 class Countly:
 
-    def __init__(self, url_str, app_key,device_id, period_second):
+    def __init__(self, url_str, app_key,period_second):
         global urlStr,appKey,deviceId,periodSecond,connectionStr
         urlStr=url_str
         appKey=app_key
-        if(device_id):
-            deviceId=device_id
-        else:
-            deviceId=self.get_device_id()
+        deviceId=self.get_device_id()
         periodSecond=period_second
 
 
     def init(self):
         self.init(1)
 
-    def init(self,start_thrad):
-        if start_thrad==1:
-            thread= threading.Timer(periodSecond, self.init).start()
+    def init(self, start_thread):
+        if start_thread==1:
+            threading.Timer(periodSecond, self.init,[start_thread]).start()
         metrics = {
-              "_os": "Linux",
-              "_os_version": str(platform.platform()),
+              "_os":str(platform.system()),
+              "_os_version": str(platform.release()),
               "_device": platform.machine(),
               "_app_version": "0.0.1",
               "_locale": locale.getdefaultlocale()
@@ -57,11 +54,11 @@ class Countly:
         else:
           getrequest_init="https://"+urlStr + "/i?begin_session=1&app_key=" + appKey + "&device_id=" + deviceId + "&metrics=" + queuemetrics[0].strip()
           self.connection_response(getrequest_init, metrics_queue_file)
-          threading.Timer(periodSecond, self.init).start()
 
     def event(self,key):
         self.init(0)
-        threading.Timer(periodSecond, self.event, [key]).start()
+
+        threading.Timer(periodSecond, self.event,[key]).start()
 
         events = [{
             "count":1,
@@ -82,7 +79,8 @@ class Countly:
 
     def event(self, key, sum_int):
         self.init(0)
-        threading.Timer(periodSecond, self.event, [key,sum_int]).start()
+
+        threading.Timer(periodSecond, self.event,[key,sum_int]).start()
 
         events = [{
             "count":1,
