@@ -32,7 +32,7 @@ class Countly:
         self.init(1)
 
     def init(self, start_thread):
-        if start_thread==1:
+        if start_thread==1 and periodSecond>0:
             threading.Timer(periodSecond, self.init,[start_thread]).start()
         metrics = {
               "_os":str(platform.system()),
@@ -57,8 +57,8 @@ class Countly:
 
     def event(self,key):
         self.init(0)
-
-        threading.Timer(periodSecond, self.event,[key]).start()
+        if(periodSecond>0):
+            threading.Timer(periodSecond, self.event,[key]).start()
 
         events = [{
             "count":1,
@@ -79,8 +79,8 @@ class Countly:
 
     def event(self, key, sum_int):
         self.init(0)
-
-        threading.Timer(periodSecond, self.event,[key,sum_int]).start()
+        if(periodSecond>0):
+            threading.Timer(periodSecond, self.event,[key,sum_int]).start()
 
         events = [{
             "count":1,
