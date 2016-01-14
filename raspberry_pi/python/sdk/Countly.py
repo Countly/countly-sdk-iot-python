@@ -36,7 +36,7 @@ class Countly:
             threading.Timer(periodSecond, self.init,[start_thread]).start()
         metrics = {
               "_os":str(platform.system()),
-              "_os_version": str(platform.release()),
+              "_os_version": str(platform.release().replace("l","")),
               "_device": platform.machine(),
               "_app_version": "0.0.1",
               "_locale": locale.getdefaultlocale()
