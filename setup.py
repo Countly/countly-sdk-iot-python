@@ -7,7 +7,7 @@ setup(
   author = 'Countly',
   author_email = 'hello@count.ly',
   url = 'https://github.com/countly/countly-sdk-iot',
-  download_url = 'https://github.com/countly/countly-sdk-iot/tarball/0.1',
+  download_url = 'https://github.com/countly/countly-sdk-iot/tarball/0.1.2',
   keywords = ['countly', 'iot', 'pyhon'],
   classifiers = [],
 )
