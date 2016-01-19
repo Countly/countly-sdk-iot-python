@@ -1,4 +1,4 @@
-from raspberry_pi.python.sdk.Countly import Countly
+from raspberry_pi.python.Countly import Countly
 
 temperature = 30
 light=50

@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
-  name = 'raspberry_pi.python.sdk',
-  packages = ['raspberry_pi.python.sdk'],
-  version = '0.1',
+  name = 'raspberry_pi.python',
+  packages = ['raspberry_pi.python'],
+  version = '0.1.2',
   description = 'Countly IOT SDK for Raspberry Pi Python',
   author = 'Countly',
   author_email = 'hello@count.ly',
