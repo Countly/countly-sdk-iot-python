@@ -1,6 +1,8 @@
-import grovepi
 import threading
-from raspberry_pi.python.Countly import Countly
+
+import grovepi
+
+from raspberry_pi.Raspberry_SDK.Countly import Countly
 
 temperature_sensor = 1
 light_sensor = 0
