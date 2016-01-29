@@ -5,9 +5,9 @@ Countly can be used to store sensor data coming from IoT devices. This repositor
 Currently supported devices: 
 
 * Raspberry Pi family of devices (also supporting [Grove sensors](http://www.dexterindustries.com/GrovePi/supported-sensors/)) 
-
+* Arduino Yun with Grove 
+* 
 Work in progress devices: 
 
 * Intel Edison boards
-* Arduino 
-
+* Other Arduino devices
