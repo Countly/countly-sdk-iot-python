@@ -8,4 +8,4 @@ Currently supported devices:
 * Intel Edison boards
 * Arduino Yun with Grove 
 
-If you are very new to Python, or if you are more comfortable using C++, we also have [Countly C++ SDK repository](https://github.com/Countly/countly-sdk-iot-c++/) for several supported IoT devices. 
+If you are very new to Python, or if you are more comfortable using C++, we also have [Countly C++ SDK repository](https://github.com/Countly/countly-sdk-iot-cpp/) for several supported IoT devices. 
