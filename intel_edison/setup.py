@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'IntelEdison_SDK',
   packages = ['IntelEdison_SDK'],
-  version = '0.1.3',
+  version = '0.1.4',
   description = 'Countly IoT Analytics SDK for Intel Edison device',
   author = 'Countly',
   author_email = 'hello@count.ly',
