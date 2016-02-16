@@ -3,7 +3,7 @@ setup(
   name = 'ArduinoYun_SDK',
   packages = ['ArduinoYun_SDK'],
   version = '0.1.3',
-  description = 'Countly IoT Analytics SDK for Intel Edison device',
+  description = 'Countly IoT Analytics SDK for Arduino Yun device',
   author = 'Countly',
   author_email = 'hello@count.ly',
   url = 'https://github.com/countly/countly-sdk-python',
