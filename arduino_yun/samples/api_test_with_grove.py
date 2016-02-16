@@ -1,6 +1,6 @@
 import grovepi
 
-from raspberry_pi.Raspberry_SDK.Countly import Countly
+from common.Countly import Countly
 
 temperature_sensor = 1
 light_sensor = 0

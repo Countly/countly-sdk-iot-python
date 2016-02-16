@@ -1,9 +1,9 @@
 from distutils.core import setup
 setup(
-  name = 'Raspberry_SDK',
-  packages = ['Raspberry_SDK'],
+  name = 'ArduinoYun_SDK',
+  packages = ['ArduinoYun_SDK'],
   version = '0.1.3',
-  description = 'Countly IoT Analytics SDK for Raspberry Pi devices',
+  description = 'Countly IoT Analytics SDK for Intel Edison device',
   author = 'Countly',
   author_email = 'hello@count.ly',
   url = 'https://github.com/countly/countly-sdk-python',
