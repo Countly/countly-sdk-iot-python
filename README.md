@@ -7,6 +7,7 @@ Currently supported devices:
 * Raspberry Pi family of devices (also supporting [Grove sensors](http://www.dexterindustries.com/GrovePi/supported-sensors/)) 
 * Intel Edison boards
 * Arduino Yun with Grove 
+* Samsung ARTIK 5 
 
 ## Documentation 
 
