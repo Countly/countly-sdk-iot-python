@@ -1,1 +1,1 @@
-from raspberry_pi import *
+from intel_edison import *

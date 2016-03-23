@@ -1,1 +1,1 @@
-from raspberry_pi.samples import *
+from intel_edison.samples import *
