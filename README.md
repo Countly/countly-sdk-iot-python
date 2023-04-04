@@ -1,3 +1,5 @@
+## This repository ir archived and not maintained anymore
+
 # Countly Python SDK for IoT devices
 
 Countly can be used to store sensor data coming from IoT devices. This repository holds all Python SDKs that can be used by different IoT devices. SDKs also have persistency feature - e.g if data cannot be sent to Countly server, it is saved to be sent later. 
